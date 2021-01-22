@@ -1,8 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">NewCalculator</string>
-    <string name="projectName">Android1 project</string>
-    <string name="result">Result</string>
-    <string name="resultOut">Out</string>
+    <string name="app_name">Калькулятор</string>
+    <string name="projectName">Проект Андроид1</string>
+    <string name="result">Результат</string>
+    <string name="resultOut">Вывод результата</string>
     <string name="_0">0</string>
     <string name="c">C</string>
     <string name="brecets">()</string>
