@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="projName">18sp</dimen>
+    <dimen name="tvText">18sp</dimen>
+    <dimen name="eTextIn">18sp</dimen>
+    <dimen name="eTextOut">26sp</dimen>
+    <dimen name="buttonSize">60dp</dimen>
+    <dimen name="outScreenWidth">264dp</dimen> <!--ширина tvOut 264dp = 60dp x 4 + 8dp x 3-->
+    <dimen name="topPadding">16dp</dimen>
+    <dimen name="screedPadding">8dp</dimen>
+    <dimen name="buttonPadding">8dp</dimen>
+    <dimen name="paddungLayIn">30dp</dimen>
+    <dimen name="paddingMain">15dp</dimen>
+</resources>
