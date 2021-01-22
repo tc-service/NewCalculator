@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/wood"
+    android:background="@drawable/earth_landscape"
     tools:context=".MainActivity">
 
     <TextView
@@ -70,6 +69,7 @@
         android:id="@+id/button1"
         style="@style/NumBottom"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
         android:text="@string/_1"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toStartOf="@+id/buttonClear"
@@ -80,6 +80,7 @@
         style="@style/NumBottom"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/buttonPadding"
+        android:backgroundTint="@color/white"
         android:text="@string/_2"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toEndOf="@+id/button1"
@@ -90,6 +91,7 @@
         style="@style/NumBottom"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/buttonPadding"
+        android:backgroundTint="@color/white"
         android:text="@string/_3"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toEndOf="@+id/button2"
@@ -109,6 +111,7 @@
         android:id="@+id/button4"
         style="@style/NumBottom"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
         android:text="@string/_4"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toStartOf="@+id/button1"
@@ -119,6 +122,7 @@
         style="@style/NumBottom"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/buttonPadding"
+        android:backgroundTint="@color/white"
         android:text="@string/_5"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toEndOf="@+id/button4"
@@ -129,6 +133,7 @@
         style="@style/NumBottom"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/buttonPadding"
+        android:backgroundTint="@color/white"
         android:text="@string/_6"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toEndOf="@+id/button5"
@@ -148,6 +153,7 @@
         android:id="@+id/button7"
         style="@style/NumBottom"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
         android:text="@string/_7"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toStartOf="@+id/button4"
@@ -158,6 +164,7 @@
         style="@style/NumBottom"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/buttonPadding"
+        android:backgroundTint="@color/white"
         android:text="@string/_8"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toEndOf="@+id/button7"
@@ -168,6 +175,7 @@
         style="@style/NumBottom"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/buttonPadding"
+        android:backgroundTint="@color/white"
         android:text="@string/_9"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toEndOf="@+id/button8"
@@ -187,6 +195,7 @@
         android:id="@+id/buttonOposit"
         style="@style/NumBottom"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
         android:text="@string/oposit"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toStartOf="@+id/button7"
@@ -197,6 +206,7 @@
         style="@style/NumBottom"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/buttonPadding"
+        android:backgroundTint="@color/white"
         android:text="@string/_0"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toEndOf="@+id/buttonOposit"
@@ -207,8 +217,8 @@
         style="@style/NumBottom"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/buttonPadding"
+        android:backgroundTint="@color/white"
         android:text="@string/point"
-
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toEndOf="@+id/button0"
         app:layout_constraintTop_toBottomOf="@+id/button9" />
@@ -223,6 +233,5 @@
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toEndOf="@+id/buttonDot"
         app:layout_constraintTop_toBottomOf="@+id/buttonPlus" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

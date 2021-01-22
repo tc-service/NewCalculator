@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -23,7 +24,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/buttonClear"
         style="@style/ActButtom"
         android:layout_marginTop="@dimen/screedPadding"
@@ -32,7 +33,7 @@
         app:layout_constraintStart_toStartOf="@+id/tvOut"
         app:layout_constraintTop_toBottomOf="@+id/tvOut" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/buttonBrackets"
         style="@style/ActButtom"
         android:layout_marginStart="@dimen/buttonPadding"
@@ -40,7 +41,7 @@
         app:layout_constraintStart_toEndOf="@+id/buttonClear"
         app:layout_constraintTop_toTopOf="@+id/buttonClear" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/buttonProcent"
         style="@style/ActButtom"
         android:layout_marginStart="@dimen/buttonPadding"
@@ -48,7 +49,7 @@
         app:layout_constraintStart_toEndOf="@+id/buttonBrackets"
         app:layout_constraintTop_toTopOf="@+id/buttonBrackets" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/buttonDivide"
         style="@style/ActButtom"
         android:layout_marginStart="@dimen/buttonPadding"
@@ -57,14 +58,14 @@
         app:layout_constraintStart_toEndOf="@+id/buttonProcent"
         app:layout_constraintTop_toTopOf="@+id/buttonProcent" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button1"
         style="@style/NumBottom"
         android:text="@string/_1"
         app:layout_constraintStart_toStartOf="@+id/buttonClear"
         app:layout_constraintTop_toBottomOf="@+id/buttonClear" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button2"
         style="@style/NumBottom"
         android:layout_marginStart="@dimen/buttonPadding"
@@ -72,7 +73,7 @@
         app:layout_constraintStart_toEndOf="@+id/button1"
         app:layout_constraintTop_toBottomOf="@+id/buttonBrackets" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button3"
         style="@style/NumBottom"
         android:layout_marginStart="@dimen/buttonPadding"
@@ -80,7 +81,7 @@
         app:layout_constraintStart_toEndOf="@+id/button2"
         app:layout_constraintTop_toBottomOf="@+id/buttonProcent" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/buttonMult"
         style="@style/ActButtom"
         android:layout_marginStart="@dimen/buttonPadding"
@@ -88,14 +89,14 @@
         app:layout_constraintStart_toEndOf="@+id/button3"
         app:layout_constraintTop_toBottomOf="@+id/buttonDivide" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button4"
         style="@style/NumBottom"
         android:text="@string/_4"
         app:layout_constraintStart_toStartOf="@+id/button1"
         app:layout_constraintTop_toBottomOf="@+id/button1" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button5"
         style="@style/NumBottom"
         android:layout_marginStart="@dimen/buttonPadding"
@@ -103,7 +104,7 @@
         app:layout_constraintStart_toEndOf="@+id/button4"
         app:layout_constraintTop_toBottomOf="@+id/button2" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button6"
         style="@style/NumBottom"
         android:layout_marginStart="@dimen/buttonPadding"
@@ -111,7 +112,7 @@
         app:layout_constraintStart_toEndOf="@+id/button5"
         app:layout_constraintTop_toBottomOf="@+id/button3" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/buttonMinus"
         style="@style/ActButtom"
         android:layout_marginStart="@dimen/buttonPadding"
@@ -119,14 +120,14 @@
         app:layout_constraintStart_toEndOf="@+id/button6"
         app:layout_constraintTop_toBottomOf="@+id/buttonMult" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button7"
         style="@style/NumBottom"
         android:text="@string/_7"
         app:layout_constraintStart_toStartOf="@+id/button4"
         app:layout_constraintTop_toBottomOf="@+id/button4" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button8"
         style="@style/NumBottom"
         android:layout_marginStart="@dimen/buttonPadding"
@@ -134,7 +135,7 @@
         app:layout_constraintStart_toEndOf="@+id/button7"
         app:layout_constraintTop_toBottomOf="@+id/button5" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button9"
         style="@style/NumBottom"
         android:layout_marginStart="@dimen/buttonPadding"
@@ -142,7 +143,7 @@
         app:layout_constraintStart_toEndOf="@+id/button8"
         app:layout_constraintTop_toBottomOf="@+id/button6" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/buttonPlus"
         style="@style/ActButtom"
         android:layout_marginStart="@dimen/buttonPadding"
@@ -150,14 +151,14 @@
         app:layout_constraintStart_toEndOf="@+id/button9"
         app:layout_constraintTop_toBottomOf="@+id/buttonMinus" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/buttonOposit"
         style="@style/NumBottom"
         android:text="@string/oposit"
         app:layout_constraintStart_toStartOf="@+id/button7"
         app:layout_constraintTop_toBottomOf="@+id/button7" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button0"
         style="@style/NumBottom"
         android:layout_marginStart="@dimen/buttonPadding"
@@ -165,7 +166,7 @@
         app:layout_constraintStart_toEndOf="@+id/buttonOposit"
         app:layout_constraintTop_toBottomOf="@+id/button8" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/buttonDot"
         style="@style/NumBottom"
         android:layout_marginStart="@dimen/buttonPadding"
@@ -173,7 +174,7 @@
         app:layout_constraintStart_toEndOf="@+id/button0"
         app:layout_constraintTop_toBottomOf="@+id/button9" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/buttonEqual"
         style="@style/ActButtom"
         android:layout_marginStart="@dimen/buttonPadding"
@@ -181,6 +182,5 @@
         android:text="@string/resoult"
         app:layout_constraintStart_toEndOf="@+id/buttonDot"
         app:layout_constraintTop_toBottomOf="@+id/buttonPlus" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
