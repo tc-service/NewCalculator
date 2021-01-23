@@ -1,5 +1,6 @@
 package com.technocopy.newcalculator;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
@@ -9,7 +10,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    TextView txt;
+    private TextView txt;
     private  CalculatorLogic calculatorLogic;
 
     @Override
@@ -30,25 +31,18 @@ public class MainActivity extends AppCompatActivity {
                 R.id.buttonMult, R.id.buttonPlus, R.id.buttonMinus, R.id.buttonEqual, R.id.buttonClear
         };
 
-
         txt = findViewById(R.id.tvOut);
         calculatorLogic = new CalculatorLogic();
 
         // обработка нажатий
-        View.OnClickListener numButtonClick = new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                calculatorLogic.onNumPress(v.getId()); // передаем id нажатой кнопки
-                txt.setText(calculatorLogic.getText());
-            }
+        View.OnClickListener numButtonClick = v -> {
+            calculatorLogic.onNumPress(v.getId()); // передаем id нажатой кнопки
+            txt.setText(calculatorLogic.getText());
         };
 
-        View.OnClickListener actionClick = new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                calculatorLogic.onActionPress(v.getId()); // передаем id действия
-                txt.setText(calculatorLogic.getText());
-            }
+        View.OnClickListener actionClick = v -> {
+            calculatorLogic.onActionPress(v.getId()); // передаем id действия
+            txt.setText(calculatorLogic.getText());
         };
 
         // передаем в класс логики id нажатой кнопки, опрелелив ее в массиве
@@ -60,4 +54,5 @@ public class MainActivity extends AppCompatActivity {
             findViewById(actId[i]).setOnClickListener(actionClick);
         }
     }
+
 }

@@ -3,6 +3,9 @@
     <string name="projectName">Android1 project</string>
     <string name="result">Result</string>
     <string name="resultOut">Out</string>
+    <string name="ThemeNight">Theme night</string>
+    <string name="ThemeDay">Theme light</string>
+    <string name="Return">Return</string>
     <string name="_0">0</string>
     <string name="c">C</string>
     <string name="brecets">()</string>

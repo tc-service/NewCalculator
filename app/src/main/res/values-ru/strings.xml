@@ -4,6 +4,9 @@
     <string name="projectName">Проект Андроид1</string>
     <string name="result">Результат</string>
     <string name="resultOut">Вывод результата</string>
+    <string name="ThemeNight">Ночная тема</string>
+    <string name="ThemeDay">Светлая тема</string>
+    <string name="Return">Назад</string>
     <string name="_0">0</string>
     <string name="c">C</string>
     <string name="brecets">()</string>

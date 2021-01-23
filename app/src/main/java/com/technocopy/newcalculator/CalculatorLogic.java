@@ -118,6 +118,5 @@ public class CalculatorLogic {
 
     public String getText() {
         return inputString.toString();
-
     }
 }
