@@ -3,12 +3,15 @@ package com.technocopy.newcalculator;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity{
 
     private TextView txt;
     private  CalculatorLogic calculatorLogic;
@@ -17,6 +20,14 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Button button = findViewById(R.id.btSet);
+        button.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent runSettings = new Intent(MainActivity.this, SettingsActivity.class);
+                startActivity(runSettings);
+            }
+        });
 
         // представим id кнопок чисел в виде массива целых чисел
 
