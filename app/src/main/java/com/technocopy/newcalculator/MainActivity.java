@@ -3,22 +3,22 @@ package com.technocopy.newcalculator;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-
 public class MainActivity extends AppCompatActivity{
 
     private TextView txt;
     private  CalculatorLogic calculatorLogic;
+    private final String key_to_save = "text";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_main);
 
         Button button = findViewById(R.id.btSet);
@@ -65,5 +65,17 @@ public class MainActivity extends AppCompatActivity{
             findViewById(actId[i]).setOnClickListener(actionClick);
         }
     }
+    @Override
+    protected void onSaveInstanceState(@NonNull Bundle outState) {
+        outState.putString(key_to_save, txt.getText().toString());
+        super.onSaveInstanceState(outState);
+    }
 
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState){
+        super.onRestoreInstanceState(savedInstanceState);
+        if (savedInstanceState.containsKey(key_to_save)) {
+            txt.setText(savedInstanceState.getString(key_to_save));
+        }
+    }
 }
