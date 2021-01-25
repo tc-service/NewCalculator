@@ -15,10 +15,10 @@ public class MainActivity extends AppCompatActivity{
     private  CalculatorLogic calculatorLogic;
     private final String key_to_save = "text";
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.activity_main);
 
         Button button = findViewById(R.id.btSet);
@@ -65,6 +65,8 @@ public class MainActivity extends AppCompatActivity{
             findViewById(actId[i]).setOnClickListener(actionClick);
         }
     }
+
+
     @Override
     protected void onSaveInstanceState(@NonNull Bundle outState) {
         outState.putString(key_to_save, txt.getText().toString());
