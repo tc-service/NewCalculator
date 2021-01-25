@@ -182,15 +182,15 @@
         app:layout_constraintStart_toEndOf="@+id/buttonDot"
         app:layout_constraintTop_toBottomOf="@+id/buttonPlus" />
 
-    <ImageButton
+    <Button
         android:id="@+id/btSet"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="32dp"
-        android:background="@color/nocolor"
+        android:text="@string/Settings"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/ic_round_settings_24" />
+        app:layout_constraintEnd_toEndOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
