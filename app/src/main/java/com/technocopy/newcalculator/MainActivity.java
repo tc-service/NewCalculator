@@ -65,17 +65,20 @@ public class MainActivity extends AppCompatActivity{
             findViewById(actId[i]).setOnClickListener(actionClick);
         }
     }
-    @Override
-    protected void onSaveInstanceState(@NonNull Bundle outState) {
-        outState.putString(key_to_save, txt.getText().toString());
-        super.onSaveInstanceState(outState);
+//    @Override
+//    protected void onSaveInstanceState(@NonNull Bundle outState) {
+//        outState.putString(key_to_save, calculatorLogic.getText());
+//        super.onSaveInstanceState(outState);
+//    }
+//
+//    @Override
+//    protected void onRestoreInstanceState(Bundle savedInstanceState){
+//        super.onRestoreInstanceState(savedInstanceState);
+////        if (savedInstanceState.containsKey(key_to_save)) {
+////            calculatorLogic.getText(savedInstanceState.getString(key_to_save));
+////        calculatorLogic.getText() = savedInstanceState.getString(key_to_save);
+////        txt.setText(calculatorLogic.getText());
+//        calculatorLogic.getText() = savedInstanceState.getString(key_to_save);
+//        txt.setText(calculatorLogic.getText());
+//        }
     }
-
-    @Override
-    protected void onRestoreInstanceState(Bundle savedInstanceState){
-        super.onRestoreInstanceState(savedInstanceState);
-        if (savedInstanceState.containsKey(key_to_save)) {
-            txt.setText(savedInstanceState.getString(key_to_save));
-        }
-    }
-}

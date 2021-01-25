@@ -28,4 +28,5 @@
     <string name="oposit">-/+</string>
     <string name="point">,</string>
     <string name="resoult">=</string>
+    <string name="OK">OK</string>
 </resources>
