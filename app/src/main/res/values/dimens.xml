@@ -6,6 +6,8 @@
     <dimen name="eTextOut">26sp</dimen>
     <dimen name="buttonSize">60dp</dimen>
     <dimen name="outScreenWidth">264dp</dimen> <!--ширина tvOut 264dp = 60dp x 4 + 8dp x 3-->
+    <dimen name="ScreenColorWidth">80dp</dimen>
+    <dimen name="ScreenColorHight">60dp</dimen>
     <dimen name="topPadding">16dp</dimen>
     <dimen name="screedPadding">8dp</dimen>
     <dimen name="buttonPadding">8dp</dimen>

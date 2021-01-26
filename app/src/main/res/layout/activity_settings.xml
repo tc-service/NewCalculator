@@ -19,7 +19,7 @@
             android:id="@+id/radioButton1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="@dimen/eTextOut"
             android:text="@string/ThemeNight"
             android:checked="true"
             app:layout_constraintEnd_toEndOf="parent"
@@ -30,7 +30,7 @@
             android:id="@+id/radioButton2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="@dimen/buttonPadding"
             android:text="@string/ThemeDay"
             app:layout_constraintEnd_toEndOf="@+id/radioButton"
             app:layout_constraintStart_toStartOf="@+id/radioButton"
@@ -50,9 +50,9 @@
 
     <TextView
         android:id="@+id/tvTheme"
-        android:layout_width="80dp"
-        android:layout_height="40dp"
-        android:background="@color/black"
+        android:layout_width="@dimen/ScreenColorWidth"
+        android:layout_height="@dimen/ScreenColorHight"
+        android:background="@color/purple_700"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
